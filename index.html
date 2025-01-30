@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="images/ogadget-ico.ico" />
+    <title>oGadget</title>
+  </head>
+  <body>
+    <header>
+      <nav class="globalnav">
+        <div class="nav-content">
+          <ul class="sidebarnav-list">
+            <li onclick="hideSidebar()">
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"
+                  ></path></svg
+              ></a>
+            </li>
+            <li onclick="hideSidebar()"><a href="#store">Gadget</a></li>
+            <li onclick="hideSidebar()"><a href="#store">Store</a></li>
+            <li onclick="hideSidebar()"><a href="#end">Forum</a></li>
+            <li onclick="hideSidebar()"><a href="#end">Support</a></li>
+            <li onclick="hideSidebar()"><a href="#about">About</a></li>
+            <li><a href="#">Search...</a></li>
+          </ul>
+          <ul class="globalnav-list">
+            <li>
+              <a href="index.html" title="oGadget">
+                <svg
+                  role="button"
+                  fill="#000000"
+                  height="25px"
+                  width="25px"
+                  version="1.1"
+                  id="Layer_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="0 0 512 512"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M278.076,109.351c-0.815-8.445-2.082-16.582-3.677-24.336c19.726,9.312,53.422,6.192,109.737-41.82
+			C301.601-10.226,269.033,9.662,256.35,30.072C248.195,12.199,240.78,1.228,239.934,0l-25.828,17.779
+			c0.365,0.53,26.078,38.594,32.245,90.601c-106.878,5.044-192.276,93.592-192.276,201.695C54.073,421.421,144.653,512,255.999,512
+			s201.926-90.579,201.926-201.926C457.926,206.202,379.074,120.379,278.076,109.351z M166.455,381.295h-25.085V356.21h25.085
+			V381.295z M216.627,429.031h-25.085v-25.085h25.085V429.031z M222.898,373.979h-25.085v-25.085h25.085V373.979z"
+                      />
+                    </g>
+                  </g>
+                </svg>
+              </a>
+            </li>
+            <li class="hideOnMobile"><a href="#store">Gadget</a></li>
+            <li class="hideOnMobile"><a href="#store">Store</a></li>
+            <li class="hideOnMobile"><a href="#end">Forum</a></li>
+            <li class="hideOnMobile"><a href="#end">Support</a></li>
+            <li class="hideOnMobile"><a href="#about">About</a></li>
+            <li class="hideOnMobile">
+              <a href="#" title="Search"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 50 50"
+                  width="25px"
+                  height="25px"
+                >
+                  <path
+                    d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 C 24.710938 37 28.140625 35.804688 30.9375 33.78125 L 44.09375 46.90625 L 46.90625 44.09375 L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 C 38 10.621094 30.378906 3 21 3 Z M 21 5 C 29.296875 5 36 11.703125 36 20 C 36 28.296875 29.296875 35 21 35 C 12.703125 35 6 28.296875 6 20 C 6 11.703125 12.703125 5 21 5 Z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="menu-button" onclick="showSidebar()">
+              <a href="#"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 3 9 A 1.0001 1.0001 0 1 0 3 11 L 47 11 A 1.0001 1.0001 0 1 0 47 9 L 3 9 z M 3 24 A 1.0001 1.0001 0 1 0 3 26 L 47 26 A 1.0001 1.0001 0 1 0 47 24 L 3 24 z M 3 39 A 1.0001 1.0001 0 1 0 3 41 L 47 41 A 1.0001 1.0001 0 1 0 47 39 L 3 39 z"
+                  ></path></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="welcome-text">
+        <h1>oGadget</h1>
+        <div class="welcome-text-description">
+          <p>Best gadget just for you</p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="slider-container" id="slider">
+        <div class="slider-wrapper">
+          <div class="nav-slider-button">
+            <button
+              class="slider-button welcome-nav-slider-button-size slider-button-default-color buttonprev"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30px"
+                viewBox="0 -960 960 960"
+                width="30px"
+              >
+                <path
+                  d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"
+                />
+              </svg>
+            </button>
+            <button
+              class="slider-button welcome-nav-slider-button-size slider-button-default-color buttonnext"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="30px"
+                viewBox="0 -960 960 960"
+                width="30px"
+              >
+                <path
+                  d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div class="slider">
+            <img src="images/laptop.jpg" alt="Laptop" id="slide-1" />
+            <img src="images/phone.jpg" alt="Phone" id="slide-2" />
+            <img src="images/tablet.jpg" alt="Tablet" id="slide-3" />
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
+        </div>
+      </section>
+      <section class="description-container" id="about">
+        <article id="about">
+          <h1>oGadget</h1>
+          <p>
+            is an online store that sells gadgets with a high quality of
+            gadgets, top performance, a wide varieties of options, best
+            recomendations, and affordable prices. We connect many users from
+            all over the world to make it easy for user to find the best gadget
+            based on their preferance. Users can also do business with the
+            people around the world on oGadgets in a simple, fast, and safe way.
+            Therefore, we hope this platform can help many people by giving some
+            recomendations to people who is struggle to choose what is the best
+            gadget for them and enable many people to do a transactions easily
+            with the gadget they want.
+          </p>
+        </article>
+        <aside>
+          <article class="company-profile">
+            <div class="img-container">
+              <img src="images/ogadgeticon-png.png" alt="Orange Company" />
+              <span style="font-weight: 700">oGadget</span>
+              <p>Est. 2020.</p>
+            </div>
+            <div>
+              <ul>
+                <li><p>100,000+ users registered.</p></li>
+                <li><p>1,000,000+ products sold.</p></li>
+                <li>
+                  <p>
+                    About 30,000 users have opened their store for the first
+                    time.
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    50,000+ visitors have got helped about the recomendation
+                    that has been given to them.
+                  </p>
+                </li>
+                <li>
+                  <p>~1000 users earned about 10,000$+ omsets per month.</p>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </aside>
+      </section>
+      <section class="functionality-card-container" id="features">
+        <div class="functionality-top-container">
+          <h1>Why oGadget?</h1>
+          <div class="nav-slider-card-wrapper">
+            <div class="nav-slider-button">
+              <button
+                class="slider-button card-nav-slider-button-size slider-button-nav-card-color buttonprev"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="20px"
+                >
+                  <path
+                    d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z"
+                  />
+                </svg>
+              </button>
+              <button
+                class="slider-button card-nav-slider-button-size slider-button-nav-card-color buttonnext"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="20px"
+                  viewBox="0 -960 960 960"
+                  width="20px"
+                >
+                  <path
+                    d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="item-container">
+          <div class="item-card-slider">
+            <div class="item-card item-1">
+              <img src="images/varietygadget.jpeg" alt="" />
+              <h2>Variety Of Products</h2>
+            </div>
+            <div class="item-card item-2">
+              <img src="images/affordableprice.jpeg" alt="" />
+              <h2>Affordable Prices</h2>
+            </div>
+            <div class="item-card item-3">
+              <img src="images/smartrecommendation.jpg" alt="" />
+              <h2>Smart Recommendation System</h2>
+            </div>
+            <div class="item-card item-4">
+              <img src="images/globalmarketplace.jpeg" alt="" />
+              <h2>Global Marketplace</h2>
+            </div>
+            <div class="item-card item-5">
+              <img src="images/delivery.jpeg" alt="" />
+              <h2>Fast and Secure Delivery</h2>
+            </div>
+            <div class="item-card item-6">
+              <img src="images/community.jpeg" alt="" />
+              <h2>Community Of Tech Enthusiast</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="review-container" id="review">
+        <h1>Reviews from our lovely customers:</h1>
+        <div class="review-card-container">
+          <article class="review-card">
+            <header>
+              <div class="review-profile-container">
+                <img src="images/person1.jpeg" alt="Ryan Carter" />
+                <div class="person-name-and-rating">
+                  <h2 class="person-name">Ryan Carter</h2>
+                  <div class="review-rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="review-text">
+              <p>
+                I’ve tried multiple online stores, but Ogadget stands out. They
+                have an incredible variety of gadgets, and their recommendation
+                system is truly helpful. I was unsure about which gadget to
+                choose, but the platform made it easy to compare options and
+                find the perfect one for my needs. The buying process was
+                seamless, and my order arrived on time in excellent condition.
+                This is now my go-to place for all things tech, and I highly
+                recommend it to anyone looking for quality gadgets.
+              </p>
+            </div>
+          </article>
+          <article class="review-card">
+            <header>
+              <div class="review-profile-container">
+                <img src="images/person2.jpeg" alt="Olivia Kingstone" />
+                <div class="person-name-and-rating">
+                  <h2 class="person-name">Olivia Kingstone</h2>
+                  <div class="review-rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="review-text">
+              <p>
+                Ogadget offers a wide range of gadgets that cater to every need,
+                and I loved how easy it was to browse through the options. The
+                recommendation system helped me narrow down my choices quickly.
+                However, I think their delivery service could be improved, as it
+                took a bit longer than expected to receive my order. Despite
+                that, the product arrived in perfect condition, and I was very
+                satisfied with the quality. I’ll definitely shop here again and
+                hope to see even faster delivery options in the future.
+              </p>
+            </div>
+          </article>
+          <article class="review-card">
+            <header>
+              <div class="review-profile-container">
+                <img src="images/person3.jpeg" alt="Alexander Brown" />
+                <div class="person-name-and-rating">
+                  <h2 class="person-name">Alexander Brown</h2>
+                  <div class="review-rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="review-text">
+              <p>
+                Ogadget truly sets the bar high for online gadget platforms. I
+                was struggling to decide on a laptop for my work needs, and
+                their intelligent recommendation system guided me to the best
+                option. The product I purchased was everything I needed and
+                more, exceeding my expectations in performance and quality. The
+                checkout process was smooth, and I appreciated the detailed
+                tracking updates. I will undoubtedly return for my future gadget
+                needs. This platform is a lifesaver for anyone who feels
+                overwhelmed by too many choices.
+              </p>
+            </div>
+          </article>
+          <article class="review-card">
+            <header>
+              <div class="review-profile-container">
+                <img src="images/person4.jpeg" alt="Joshua Miller" />
+                <div class="person-name-and-rating">
+                  <h2 class="person-name">Joshua Miller</h2>
+                  <div class="review-rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="review-text">
+              <p>
+                Finding the right gadget can be overwhelming, but Ogadget made
+                it so much easier. I bought a tablet for my studies, and it’s
+                been a fantastic investment. The platform is easy to navigate,
+                and I felt secure during the payment process. The customer
+                service team was quick to respond to my inquiries, which gave me
+                even more confidence in my purchase. I’ll definitely be back for
+                my next tech upgrade.
+              </p>
+            </div>
+          </article>
+          <article class="review-card">
+            <header>
+              <div class="review-profile-container">
+                <img src="images/person5.jpeg" alt="Adi Pratama" />
+                <div class="person-name-and-rating">
+                  <h2 class="person-name">Adi Pratama</h2>
+                  <div class="review-rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="25px"
+                      height="25px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <div class="review-text">
+              <p>
+                Ogadget helped me find the perfect laptop for work. The
+                recommendation system was very accurate, and the purchase
+                process was smooth. The laptop arrived on time, securely
+                packaged, and in excellent condition. This platform is a
+                lifesaver for anyone who wants quality and reliability in one
+                place.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="dummy-store-container" id="store">
+        <h1>What are you waiting for? Visit the store now!</h1>
+        <div class="embed-store-dummy-container">
+          <div class="store-name">
+            <a href="#">store.oGadet.com</a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="15"
+              height="15"
+              viewBox="0 0 30 30"
+            >
+              <path
+                d="M 25.980469 2.9902344 A 1.0001 1.0001 0 0 0 25.869141 3 L 20 3 A 1.0001 1.0001 0 1 0 20 5 L 23.585938 5 L 13.292969 15.292969 A 1.0001 1.0001 0 1 0 14.707031 16.707031 L 25 6.4140625 L 25 10 A 1.0001 1.0001 0 1 0 27 10 L 27 4.1269531 A 1.0001 1.0001 0 0 0 25.980469 2.9902344 z M 6 7 C 4.9069372 7 4 7.9069372 4 9 L 4 24 C 4 25.093063 4.9069372 26 6 26 L 21 26 C 22.093063 26 23 25.093063 23 24 L 23 14 L 23 11.421875 L 21 13.421875 L 21 16 L 21 24 L 6 24 L 6 9 L 14 9 L 16 9 L 16.578125 9 L 18.578125 7 L 16 7 L 14 7 L 6 7 z"
+              ></path>
+            </svg>
+          </div>
+          <div class="main-dummy-store">
+            <div class="hover-barrier">
+              <div class="hover-visit">
+                <h3>Found the item you want?</h3>
+                <a href="#">Visit Store</a>
+              </div>
+            </div>
+            <div class="item-store-card-container">
+              <div class="item-store-card store-card-1">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-2">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-3">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-4">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-5">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-6">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-7">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-8">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-9">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-10">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-11">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-12">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-13">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-14">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-15">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+              <div class="item-store-card store-card-16">
+                <div class="img-container">
+                  <img src="" alt="" />
+                </div>
+                <div class="details">
+                  <p class="item-name"></p>
+                  <p class="price">
+                    <span
+                      class="before-discount-price"
+                      style="text-decoration: line-through"
+                    ></span
+                    ><span class="final-price"></span>
+                  </p>
+                  <div class="store">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 50 50"
+                      width="12px"
+                      height="12px"
+                    >
+                      <path
+                        d="M 7 4 C 5.3550302 4 4 5.3550302 4 7 L 4 10.912109 C 3.9625533 11.094611 3 15.799274 3 18.5 C 3 19.87865 3.2660604 21.198539 3.9960938 22.251953 C 3.9974251 22.253874 3.9986651 22.255894 4 22.257812 L 4 43 C 4 44.64497 5.3550302 46 7 46 L 9.8320312 46 A 1.0001 1.0001 0 0 0 10.158203 46 L 18.832031 46 A 1.0001 1.0001 0 0 0 19.158203 46 L 43 46 C 44.64497 46 46 44.64497 46 43 L 46 22.257812 C 46.001335 22.255894 46.002575 22.253874 46.003906 22.251953 C 46.73394 21.198539 47 19.87865 47 18.5 C 47 15.799274 46.037447 11.09461 46 10.912109 L 46 7 C 46 5.3550302 44.64497 4 43 4 L 7 4 z M 7 6 L 43 6 C 43.56503 6 44 6.4349698 44 7 L 44 10 L 32.154297 10 A 1.0001 1.0001 0 0 0 31.984375 9.9863281 A 1.0001 1.0001 0 0 0 31.839844 10 L 25.154297 10 A 1.0001 1.0001 0 0 0 24.984375 9.9863281 A 1.0001 1.0001 0 0 0 24.839844 10 L 18.154297 10 A 1.0001 1.0001 0 0 0 17.984375 9.9863281 A 1.0001 1.0001 0 0 0 17.839844 10 L 6 10 L 6 7 C 6 6.4349698 6.4349698 6 7 6 z M 8 7 A 1 1 0 0 0 7 8 A 1 1 0 0 0 8 9 A 1 1 0 0 0 9 8 A 1 1 0 0 0 8 7 z M 11 7 A 1 1 0 0 0 10 8 A 1 1 0 0 0 11 9 A 1 1 0 0 0 12 8 A 1 1 0 0 0 11 7 z M 14 7 A 1 1 0 0 0 13 8 A 1 1 0 0 0 14 9 A 1 1 0 0 0 15 8 A 1 1 0 0 0 14 7 z M 5.8730469 12 L 10 12 L 10 20.886719 C 9.3615118 21.563076 8.4966284 22 7.5 22 C 6.5277884 22 6.0393417 21.686664 5.640625 21.111328 C 5.2419083 20.535993 5 19.60635 5 18.5 C 5 16.527448 5.7019741 12.911439 5.8730469 12 z M 12 12 L 17 12 L 17 20.886719 C 16.361512 21.563076 15.496628 22 14.5 22 C 13.504858 22 12.639028 21.566344 12 20.892578 L 12 12 z M 19 12 L 24 12 L 24 20.886719 C 23.361512 21.563076 22.496628 22 21.5 22 C 20.504858 22 19.639028 21.566344 19 20.892578 L 19 12 z M 26 12 L 31 12 L 31 20.886719 C 30.362395 21.562365 29.49642 22 28.5 22 C 27.504858 22 26.639028 21.566344 26 20.892578 L 26 12 z M 33 12 L 38 12 L 38 20.892578 C 37.361904 21.565869 36.495044 22 35.5 22 C 34.504858 22 33.638213 21.56588 33 20.892578 L 33 12 z M 40 12 L 44.126953 12 C 44.298026 12.911439 45 16.527448 45 18.5 C 45 19.60635 44.758092 20.535993 44.359375 21.111328 C 43.960658 21.686664 43.472212 22 42.5 22 C 41.504858 22 40.638213 21.56588 40 20.892578 L 40 12 z M 11 22.712891 C 11.947802 23.506862 13.164489 24 14.5 24 C 15.835511 24 17.052198 23.506862 18 22.712891 C 18.947802 23.506862 20.164489 24 21.5 24 C 22.835511 24 24.052198 23.506862 25 22.712891 C 25.947802 23.506862 27.164489 24 28.5 24 C 29.834661 24 31.052555 23.50807 32 22.714844 C 32.947445 23.50807 34.165339 24 35.5 24 C 36.834661 24 38.052555 23.50807 39 22.714844 C 39.947445 23.50807 41.165339 24 42.5 24 C 43.03686 24 43.539024 23.908002 44 23.748047 L 44 43 C 44 43.56503 43.56503 44 43 44 L 20 44 L 20 27 L 9 27 L 9 44 L 7 44 C 6.4349698 44 6 43.56503 6 43 L 6 23.748047 C 6.4609758 23.908002 6.9631394 24 7.5 24 C 8.8355107 24 10.052198 23.506862 11 22.712891 z M 23 27 L 23 28 L 23 41 L 41 41 L 41 27 L 23 27 z M 11 29 L 18 29 L 18 44 L 11 44 L 11 29 z M 25 29 L 39 29 L 39 39 L 25 39 L 25 29 z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="rating">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 48 48"
+                      width="12px"
+                      height="12px"
+                    >
+                      <linearGradient
+                        id="q0c2dLEp_4LHk~8cW2fATa"
+                        x1="9.009"
+                        x2="38.092"
+                        y1="6.36"
+                        y2="45.266"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop offset="0" stop-color="#ffda1c" />
+                        <stop offset="1" stop-color="#feb705" />
+                      </linearGradient>
+                      <path
+                        fill="url(#q0c2dLEp_4LHk~8cW2fATa)"
+                        d="M24.913,5.186l5.478,12.288l13.378,1.413c0.861,0.091,1.207,1.158,0.564,1.737l-9.993,9.005	l2.791,13.161c0.18,0.847-0.728,1.506-1.478,1.074L24,37.141l-11.653,6.722c-0.75,0.432-1.657-0.227-1.478-1.074l2.791-13.161	l-9.993-9.005c-0.643-0.579-0.296-1.646,0.564-1.737l13.378-1.413l5.478-12.288C23.439,4.395,24.561,4.395,24.913,5.186z"
+                      />
+                    </svg>
+                    <p></p>
+                  </div>
+                  <div class="tagline"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="discount-container">
+            <div class="discount-wrapper">
+              <h3>New Year 2025 | All Products Discount Up To 80%</h3>
+              <p class="discount-time" id="countdown-time">00:00:00</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="endpage" id="end">
+        <p>Copyright &#169; 2025 oGadget. All Rights Reserved.</p>
+        <div class="contact">
+          <div>
+            <a href="tel:123-456-789">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 50 50"
+                width="25px"
+                height="25px"
+              >
+                <path
+                  d="M 39.03125 47 C 39.015625 47 39 47 38.984375 47 C 31.46875 46.753906 22.664063 39.46875 16.597656 33.398438 C 10.523438 27.328125 3.238281 18.519531 3.003906 11.039063 C 2.917969 8.414063 9.359375 3.746094 9.425781 3.699219 C 11.097656 2.535156 12.953125 2.949219 13.714844 4.003906 C 14.230469 4.71875 19.113281 12.117188 19.644531 12.957031 C 20.195313 13.828125 20.113281 15.125 19.425781 16.425781 C 19.046875 17.148438 17.789063 19.359375 17.199219 20.390625 C 17.835938 21.296875 19.519531 23.519531 22.996094 26.996094 C 26.476563 30.472656 28.695313 32.160156 29.605469 32.796875 C 30.636719 32.207031 32.847656 30.949219 33.570313 30.570313 C 34.851563 29.890625 36.140625 29.804688 37.019531 30.34375 C 37.917969 30.894531 45.296875 35.800781 45.976563 36.273438 C 46.546875 36.675781 46.914063 37.363281 46.988281 38.164063 C 47.058594 38.972656 46.808594 39.828125 46.289063 40.574219 C 46.246094 40.636719 41.632813 47 39.03125 47 Z"
+                />
+              </svg>
+            </a>
+            <p>+123-456-789</p>
+          </div>
+          <div>
+            <a href="mailto:CS@oGadet.com"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 50 50"
+                width="25px"
+                height="25px"
+              >
+                <path
+                  d="M 0 7 L 0 43 L 50 43 L 50 7 Z M 46 16.273438 L 25 28.179688 L 4 16.273438 L 4 13.914063 L 25 25.820313 L 46 13.914063 Z"
+                /></svg
+            ></a>
+            <p>CS@oGadget.com</p>
+          </div>
+        </div>
+        <div class="social-media">
+          <p>Stay In The Loop?</p>
+          <ul>
+            <li>
+              <a href="https://www.instagram.com/azzyhy"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                  ></path></svg
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.x.com/azzyhy"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z"
+                  ></path></svg
+              ></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="25"
+                  height="25"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 44.898438 14.5 C 44.5 12.300781 42.601563 10.699219 40.398438 10.199219 C 37.101563 9.5 31 9 24.398438 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.398438 17 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.898438 40.5 17.898438 41 24.5 41 C 31.101563 41 37.101563 40.5 40.601563 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.101563 35.5 C 45.5 33 46 29.398438 46.101563 25 C 45.898438 20.5 45.398438 17 44.898438 14.5 Z M 19 32 L 19 18 L 31.199219 25 Z"
+                  ></path></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/sidebar.js"></script>
+    <script src="scripts/countdown.js"></script>
+    <script src="scripts/slider.js"></script>
+    <script src="scripts/randomproducts.js"></script>
+  </body>
+</html>
